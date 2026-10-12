@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação da Árvore DOM</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        section {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+
+        .destaque {
+            background-color: #fef08a;
+            border: 2px solid #eab308;
+            padding: 12px;
+        }
+
+        .oculto {
+            display: none;
+        }
+
+        input, button {
+            margin: 5px;
+            padding: 8px;
+        }
+    </style>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h1>Exercícios de Manipulação da Árvore DOM</h1>
+
+    <section>
+        <h2>Exercício 1</h2>
+        <div id="container">
+            <h1 id="titulo-boas-vindas">Texto Inicial...</h1>
+        </div>
+    </section>
+
+    <section>
+        <h2>Exercício 2</h2>
+        <h3>Minha Lista de Tarefas</h3>
+        <input type="text" id="campo-tarefa" placeholder="Digite uma tarefa">
+        <button id="btn-adicionar">Adicionar tarefa</button>
+        <ul id="lista-tarefas">
+            <li>Estudar sintaxe básica do JS</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Exercício 3</h2>
+        <div id="painel" class="oculto">
+            <p>Mensagem importante para o usuário!</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Exercício 4</h2>
+        <ul id="notificacoes">
+            <li id="notif-1">Notificação 1: Atualização de sistema</li>
+            <li id="notif-2">Notificação 2: Novo e-mail recebido</li>
+            <li id="notif-3">Notificação 3: Lembrete de aula</li>
+        </ul>
+        <button id="btn-remover">Remover primeira notificação</button>
+    </section>
+
+    <section>
+        <h2>Exercício 5</h2>
+        <input type="text" id="campo-nome" placeholder="Digite seu nome">
+        <button id="btn-exibir">Exibir Mensagem</button>
+        <p id="resposta"></p>
+    </section>
+
+</body>
+</html>
